@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/workspace for java/HashSet/HashSet.iml" filepath="$PROJECT_DIR$/workspace for java/HashSet/HashSet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workspace for java/Linked List/Linked List.iml" filepath="$PROJECT_DIR$/workspace for java/Linked List/Linked List.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workspace for java/Merge Sort/Merge Sort.iml" filepath="$PROJECT_DIR$/workspace for java/Merge Sort/Merge Sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workspace for java/Stack and Queues/Queues.iml" filepath="$PROJECT_DIR$/workspace for java/Stack and Queues/Queues.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workspace for java/Quick sort/Quick sort.iml" filepath="$PROJECT_DIR$/workspace for java/Quick sort/Quick sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workspace for java/Recursion In java/Recursion In java.iml" filepath="$PROJECT_DIR$/workspace for java/Recursion In java/Recursion In java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workspace for java/hashMap/hashMap.iml" filepath="$PROJECT_DIR$/workspace for java/hashMap/hashMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workspace for java/love babar sheet problem/love babar sheet problem.iml" filepath="$PROJECT_DIR$/workspace for java/love babar sheet problem/love babar sheet problem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workspace for java/opps concept/opps concept.iml" filepath="$PROJECT_DIR$/workspace for java/opps concept/opps concept.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workspace for java/workspace for java.iml" filepath="$PROJECT_DIR$/workspace for java/workspace for java.iml" />
+    </modules>
+  </component>
+</project>
