@@ -40,6 +40,7 @@ public class circularQueue {
                 return -1;
             }
             int result = arr[front];
+            //when only one element in the queue
             if (front == rear) {
                 rear = front = -1;
             } else {
