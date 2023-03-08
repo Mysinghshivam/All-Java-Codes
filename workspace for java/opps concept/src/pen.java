@@ -1,30 +1,73 @@
-class exp2{
-    String colour;
-    int EXP_date;
-   /* exp2(String colour,int EXP_date){
-        this.colour=colour;
-        this.EXP_date=EXP_date;
-    }*/
-    public void info(){
-        System.out.println(this.colour);
-        System.out.println(this.EXP_date);
+//start
+/*
+class Pen{
+    String color;
+    String type;
+
+     public void print(){
+         System.out.println(color);
+         System.out.println(type);
+     }
+}
+class Main{
+    public static void main(String[] args) {
+        Pen p1 = new Pen();
+        p1.color = "Blue";
+        p1.type = "Ballpen";
+        p1.print();
+
+    }
+}*/
+
+//constructor
+
+/*class pen {
+    String color;
+    String type;
+     pen(String color , String type){
+         this.color = color;
+         this.type = type;
+     }
+
+     public void print(){
+         System.out.println(color);
+         System.out.println(type);
+     }
+}
+
+class main {
+    public static void main(String[] args) {
+        pen p1 = new pen("red", "gelpen");
+        p1.print();
+    }
+}*/
+
+//Copy constructor
+class pen {
+    String color;
+    String type;
+
+    pen(pen p1) {
+        this.color = p1.color;
+        this.type = p1.type;
+    }
+    pen(){
+    }
+
+    public void print(){
+        System.out.println(color);
+        System.out.println(type);
     }
 }
-public class pen {
-    public static void main(String [] args){
-     exp2 s1=new exp2();
-     s1.colour="BLack";
-     s1.EXP_date=25;
+class main{
+    public static void main(String[] args) {
+        pen p1 = new pen();
+        p1.color = "red";
+        p1.type = "gelpen";
 
-     exp2 s2=new exp2();
-     s2.colour="red";
-     s2.EXP_date=20;
+         pen p2 = new pen(p1);
 
-     exp2 s3=new exp2();
-     s3.colour="blue";
-     s3.EXP_date=15;
-     s1.info();
-     s2.info();
-     s3.info();
+         p2.print();
+
     }
 }
