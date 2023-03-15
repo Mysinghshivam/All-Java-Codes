@@ -41,44 +41,44 @@ public class reverseLinkedList {
         System.out.print("null\n");
     }
 
-    //reverse using iteration
-    public void reverseIterate(){
-        if (head == null || head.next == null){
-            return;
-        }
-
-        Node previousNode = head;
-        Node currNode = head.next;
-
-        while (currNode != null){
-            Node nextNode = currNode.next;
-
-            currNode.next = previousNode;
-
-            //update
-            previousNode = currNode;
-            currNode = nextNode;
-        }
-        head.next = null;
-        head = previousNode;
-    }
-
-//    //reverse using recursion
-//    public void reverseRecursion(Node previousNode, Node currNode){
-//        if (currNode == null){
-//            head.next = null;
-//            head = previousNode;
-//            return;
-//        }
+//    //reverse using iteration
+//    public void reverseIterate(){
 //        if (head == null || head.next == null){
 //            return;
 //        }
-//        Node nextNode = currNode.next;
-//        currNode.next = previousNode;
 //
-//        reverseRecursion(currNode,nextNode);
+//        Node previousNode = head;
+//        Node currNode = head.next;
 //
+//        while (currNode != null){
+//            Node nextNode = currNode.next;
+//
+//            currNode.next = previousNode;
+//
+//            //update
+//            previousNode = currNode;
+//            currNode = nextNode;
+//        }
+//        head.next = null;
+//        head = previousNode;
 //    }
+
+    //reverse using recursion
+    public void reverseRecursion(Node previousNode, Node currNode){
+        if (currNode == null){
+            head.next = null;
+            head = previousNode;
+            return;
+        }
+        if (head == null || head.next == null){
+            return;
+        }
+        Node nextNode = currNode.next;
+        currNode.next = previousNode;
+
+        reverseRecursion(currNode,nextNode);
+
+    }
     public static void main(String[] args) {
         reverseLinkedList ll = new reverseLinkedList();
         ll.addLast(1);
@@ -90,8 +90,8 @@ public class reverseLinkedList {
 //        ll.reverseIterate();
 //        ll.printList();
 
-//        ll.reverseRecursion(ll.head, ll.head.next);  //if we have only one node then this condition will be fail
-//        ll.printList();
+        ll.reverseRecursion(ll.head, ll.head.next);  //if we have only one node then this condition will be fail
+        ll.printList();
 
     }
 }

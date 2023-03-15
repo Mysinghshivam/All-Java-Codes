@@ -64,6 +64,13 @@ public class singlelinkedList {
         System.out.print("Enter the position where you want to enter the node 1 to " + count + ":");
         Scanner sc = new Scanner(System.in);
         int position = sc.nextInt();
+
+        //if user want to add at first position
+        if (position == 1){
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
         currNode = head;
         int i = 2;
         while (i != position) {
@@ -137,14 +144,14 @@ public class singlelinkedList {
        ll.addLast(4);
        ll.printList();
 
-       //ll.addSpecificPosition(5);
-       //ll.printList();
+       ll.addSpecificPosition(5);
+       ll.printList();
 
-        ll.deleteFirst();
-        ll.printList();
-
-        ll.deleteLast();
-        ll.printList();
+//        ll.deleteFirst();
+//        ll.printList();
+//
+//        ll.deleteLast();
+//        ll.printList();
 
         System.out.println("Size of List " + ll.sizeList());
     }
