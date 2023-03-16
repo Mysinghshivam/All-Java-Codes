@@ -11,11 +11,13 @@ public class circularLinkedList {
     }
 
     //add data at first end
-    public void addfirst(int data) {
+    public void addFirst(int data) {
         Node newNode = new Node(data);
-//        if (head == null){
-//            System.out.print("List is empty");
-//        }
+        if (head == null){
+            head = newNode;
+            tail = newNode;
+            tail.next = head;
+        }
         newNode.next = head;
         head = newNode;
         tail.next = newNode;
@@ -44,7 +46,7 @@ public class circularLinkedList {
        }
         System.out.print("\nData of circularLinkedList: head->");
        do {
-           System.out.print(currentNode.data+"->");
+           System.out.print(currentNode.data+" ");
            currentNode = currentNode.next;
        }while (currentNode != head);
     }
@@ -58,7 +60,8 @@ public class circularLinkedList {
 
 
       //add data at first sihde
-      cll.addfirst(4);
+      cll.addFirst(4);
+      cll.addFirst(5);
       cll.printList();
     }
 }
