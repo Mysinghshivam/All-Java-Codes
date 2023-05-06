@@ -1,7 +1,7 @@
 public class stackUsingLinkedList {
 
     //creation of node
-    public static class Node {
+    public  static class Node {
         int data;
         Node next;
 
@@ -11,10 +11,9 @@ public class stackUsingLinkedList {
         }
     }
 
-
     //stack operation
-    public static class Stack {
-        public static Node head;  //head means top
+    public  static class Stack {
+        public  static Node head;  //head means top
 
         public boolean isEmpty() {
             return head == null;

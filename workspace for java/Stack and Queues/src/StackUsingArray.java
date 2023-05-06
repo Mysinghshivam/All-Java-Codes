@@ -13,7 +13,6 @@ public class StackUsingArray {
         for (int i=0; i<=top; i++){
             System.out.print(stack[i] + " ");
         }
-
     }
 
     //push element in stack

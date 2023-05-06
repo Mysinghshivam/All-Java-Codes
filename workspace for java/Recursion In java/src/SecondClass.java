@@ -1,6 +1,5 @@
 //Tower of hanoi....
-/*
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class SecondClass {
     public static void TowerOfHanoi(int n, String src, String hel, String des ){
@@ -19,11 +18,10 @@ public class SecondClass {
       TowerOfHanoi(n, "S","H","D");
   }
 
-}
+}*/
 
 
-Time complexity O(2^n - 1) or O(2^n)
-*/
+//Time complexity O(2^n - 1) or O(2^n)
 
 import java.util.Scanner;
 
@@ -227,6 +225,7 @@ class SecondClass {
 */
 
 
+/*
 //print mobile keypad combination
 class SecondClass {
     public static String keypad[] = {".", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz"};
@@ -248,4 +247,4 @@ class SecondClass {
         String str = "23";
         printComb(str, 0, "");
     }
-}
+}*/
