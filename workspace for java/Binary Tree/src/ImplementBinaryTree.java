@@ -98,9 +98,9 @@ public class ImplementBinaryTree {
         Node rootNode = binaryTree.BuildBTree(nodes);
         //System.out.println(rootNode.data);
 
-        //binaryTree.preOrder(rootNode);
-        //binaryTree.inOrder(rootNode);
-        //binaryTree.postOrder(rootNode);
-        binaryTree.LevelOrder(rootNode);
+        binaryTree.preOrder(rootNode);
+//        binaryTree.inOrder(rootNode);
+//        binaryTree.postOrder(rootNode);
+//        binaryTree.LevelOrder(rootNode);
     }
 }

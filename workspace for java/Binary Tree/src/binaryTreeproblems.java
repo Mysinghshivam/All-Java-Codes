@@ -55,6 +55,31 @@ public class binaryTreeproblems {
 
             return leftSum + rightSum + rootNode.data;
         }
+
+        //height of a tree
+        public int heightOfTree(Node rootNode){
+
+            if (rootNode == null){
+                return 0;
+            }
+            int leftHeight = heightOfTree(rootNode.leftChild);
+            int rightHeight = heightOfTree(rootNode.rightChild);
+
+            return Math.max(leftHeight, rightHeight) + 1;
+        }
+
+        //diameter of a tree complexity O(n)
+         public int diameterOfTree (Node rootNode){
+            if (rootNode == null){
+                return 0;
+            }
+
+            int Diameter1 = diameterOfTree(rootNode.leftChild);
+            int Diameter2 = diameterOfTree(rootNode.rightChild);
+            int Diameter3 = heightOfTree(rootNode.leftChild) + heightOfTree(rootNode.rightChild) + 1;
+
+            return Math.max(Math.max(Diameter1, Diameter2), Diameter3);
+         }
     }
 
     public static void main(String[] args) {
@@ -65,5 +90,8 @@ public class binaryTreeproblems {
 
         System.out.println(b1.countNodes(rootNode));
         System.out.println(b1.sumOfNodes(rootNode));
+        System.out.println(b1.heightOfTree(rootNode) );
+
+        System.out.println(b1.diameterOfTree(rootNode));
     }
 }
