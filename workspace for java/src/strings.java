@@ -17,7 +17,7 @@ public class strings {
 //            }
 
             //str.length() by this we can find out the length of string
-            //charAT[i] by this we can find out the specific position
+            //charAT(i) by this we can find out the specific position
             for (int i=0;i<str1.length();i++){
                 System.out.println(str1.charAt(i));
             }
