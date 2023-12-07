@@ -27,32 +27,33 @@ public class bfsTraverse {
         graph[2].add(new Edge(2,0));
         graph[2].add(new Edge(2,4));
 
-        graph[3].add(new Edge(3,1));
-        graph[3].add(new Edge(3,5));
+        graph[3].add(new Edge(3, 1));
+        graph[3].add(new Edge(3, 4));
+        graph[3].add(new Edge(3, 5));
 
-        graph[4].add(new Edge(4,2));
-        graph[4].add(new Edge(4,5));
+        graph[4].add(new Edge(4, 2));
+        graph[4].add(new Edge(4,3));
+        graph[4].add(new Edge(4, 5));
 
-        graph[5].add(new Edge(5,3));
-        graph[5].add(new Edge(5,4));
-        graph[5].add(new Edge(5,6));
+        graph[5].add(new Edge(5, 3));
+        graph[5].add(new Edge(5, 4));
+        graph[5].add(new Edge(5, 6));
 
-        graph[6].add(new Edge(6,5));
+        graph[6].add(new Edge(6, 5));
 
     }
 
     public static void bfs(ArrayList<Edge> Graph [], int v){
         Queue<Integer> queue = new LinkedList<>();
         boolean [] visited = new boolean[v];
-        queue.add(0);
 
+        queue.add(0);
         while (!queue.isEmpty()){
             int curr = queue.remove();
-            if (visited[curr] == false){
+            if(visited[curr] == false){
                 System.out.print(curr+" ");
                 visited[curr] = true;
-
-                for(int i = 0; i< Graph[curr].size(); i++){
+                for(int i = 0; i<Graph[curr].size(); i++){
                     Edge e = Graph[curr].get(i);
                     queue.add(e.destination);
                 }

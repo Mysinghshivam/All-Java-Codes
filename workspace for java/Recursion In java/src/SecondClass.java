@@ -1,5 +1,5 @@
 //Tower of hanoi....
-/*import java.util.Scanner;
+import java.util.Scanner;
 
 public class SecondClass {
     public static void TowerOfHanoi(int n, String src, String hel, String des ){
@@ -18,12 +18,12 @@ public class SecondClass {
       TowerOfHanoi(n, "S","H","D");
   }
 
-}*/
+}
 
 
 //Time complexity O(2^n - 1) or O(2^n)
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 //Reverse of string....
 /*

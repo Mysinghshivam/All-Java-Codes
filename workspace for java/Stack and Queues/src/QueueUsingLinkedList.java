@@ -21,6 +21,7 @@ public class QueueUsingLinkedList {
             Node newNode = new Node(data);
             if ( Rear == null){
                 Front = Rear = newNode;
+                return;
             }
             Rear.next = newNode;
             Rear = newNode;
